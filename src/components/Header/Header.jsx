@@ -1,6 +1,6 @@
 import "./Header.scss";
 import { Link } from "react-router-dom";
-import mascot from "./../../assets/images/mascot.jpg";
+import mascot from "./../../assets/logo/mascot.jpg";
 
 export default function Header () {
     return (

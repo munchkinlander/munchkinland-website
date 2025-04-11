@@ -1,0 +1,254 @@
+[
+  {
+    "src": "images/agu.jpg",
+    "alt": "Image 1 description",
+    "name": "Agumon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/biyo.jpg",
+    "alt": "Image 2 description",
+    "name": "Biyomon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/bota.jpg",
+    "alt": "Image 3 description",
+    "name": "Botamon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/chibi.jpg",
+    "alt": "Image 4 description",
+    "name": "Chibimon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/croagunk.jpg",
+    "alt": "Image 5 description",
+    "name": "Dr. Croagunk",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Pokemon"
+  },
+  {
+    "src": "images/demi.jpg",
+    "alt": "Image 6 description",
+    "name": "Demimon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/eggplant.jpg",
+    "alt": "Image 7 description",
+    "name": "Angry Eggplant",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Vegetable"
+  },
+  {
+    "src": "images/firefly-black.jpg",
+    "alt": "Image 8 description",
+    "name": "Firefly symbol (black)",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "The Last of Us"
+  },
+  {
+    "src": "images/firefly-white.jpg",
+    "alt": "Image 9 description",
+    "name": "Firefly symbol (white)",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "The Last of Us"
+  },
+  {
+    "src": "images/frogmaze.jpg",
+    "alt": "Image 10 description",
+    "name": "Frog Cat",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Animal"
+  },
+  {
+    "src": "images/gabu.jpg",
+    "alt": "Image 11 description",
+    "name": "Gabumon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/gabu-holo.jpg",
+    "alt": "Image 12 description",
+    "name": "Gabumon (holo)",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/gato.jpg",
+    "alt": "Image 13 description",
+    "name": "Gatomon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/goma.jpg",
+    "alt": "Image 14 description",
+    "name": "Gomamon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/gummy.jpg",
+    "alt": "Image 15 description",
+    "name": "Gummymon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/kera.jpg",
+    "alt": "Image 16 description",
+    "name": "Keramon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/koko.jpg",
+    "alt": "Image 17 description",
+    "name": "Kokomon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/kume.jpg",
+    "alt": "Image 18 description",
+    "name": "Kumemon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/kura.jpg",
+    "alt": "Image 19 description",
+    "name": "Kuramon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/lop.jpg",
+    "alt": "Image 20 description",
+    "name": "Lopmon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/pata.jpg",
+    "alt": "Image 22 description",
+    "name": "Patamon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/pika-ic.jpg",
+    "alt": "Image 23 description",
+    "name": "Chu Ice Cream",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Pokemon"
+  },
+  {
+    "src": "images/postcard.jpg",
+    "alt": "Image 24 description",
+    "name": "KeRAMEN Postcard",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Pokemon"
+  },
+  {
+    "src": "images/poyo.jpg",
+    "alt": "Image 25 description",
+    "name": "Poyomon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/puni.jpg",
+    "alt": "Image 26 description",
+    "name": "Punimon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/raikou.jpg",
+    "alt": "Image 27 description",
+    "name": "Raikou",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Pokemon"
+  },
+  {
+    "src": "images/seagull.jpg",
+    "alt": "Image 28 description",
+    "name": "Seagull Steve",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Animal"
+  },
+  {
+    "src": "images/taito.jpg",
+    "alt": "Image 29 description",
+    "name": "Taito",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Animal"
+  },
+  {
+    "src": "images/terrier.jpg",
+    "alt": "Image 30 description",
+    "name": "Terriermon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/tesla.jpg",
+    "alt": "Image 32 description",
+    "name": "Teslajellymon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/tlou-logo.jpg",
+    "alt": "Image 33 description",
+    "name": "TLOU logo",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "The Last of Us"
+  },
+  {
+    "src": "images/tomato.jpg",
+    "alt": "Image 34 description",
+    "name": "Angry Tomato",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Vegetable"
+  },
+  {
+    "src": "images/tsume.jpg",
+    "alt": "Image 35 description",
+    "name": "Tsumemon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/tsuno.jpg",
+    "alt": "Image 36 description",
+    "name": "Tsunomon",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/tsuno-holo.jpg",
+    "alt": "Image 37 description",
+    "name": "Tsunomon (holo)",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Digimon"
+  },
+  {
+    "src": "images/wiggly-ic.jpg",
+    "alt": "Image 38 description",
+    "name": "Iggly Ice Cream",
+    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "category": "Pokemon"
+  }
+]
