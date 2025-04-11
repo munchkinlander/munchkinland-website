@@ -1,0 +1,66 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.contact {
+    min-height: calc(100vh - 15rem);
+
+    &__container {
+        padding-top: 2rem;
+        @include flex-full(column, center, center);
+        @include container;
+    }
+
+    &__description {
+        padding-bottom: 2rem;
+        width: 80%;
+        @include small-body;
+
+        @include tablet {
+        width: 30rem;
+        }
+    }
+
+    &__form {
+        width: 80%;
+        padding-bottom: 2rem;
+        @include flex-align(column, center);
+
+        @include tablet {
+            width: 30rem;
+        }
+    }
+
+    &__label {
+        align-self: flex-start;
+        padding-bottom: 0.5rem;
+    }
+
+    &__field {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 2rem;
+        resize: vertical;
+    }
+
+    &__button {
+        border: .125rem solid $primary-text-color;
+        border-radius: 0.75rem;
+        padding: 0.5rem 1rem;
+        color: $primary-text-color;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        &:hover {
+            background-color: $primary-text-color;
+            color: $secondary-text-color;
+        }
+    }
+
+    &__status {
+        padding-top: 1rem;
+        color: $primary-text-color;
+    }
+}

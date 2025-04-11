@@ -1,0 +1,45 @@
+@use "./../../styles/partials/variables" as *;
+@use "./../../styles/partials/mixins" as *;
+
+.header {
+    height: 6rem;
+    background-color: $tertiary-accent-color;
+    @include hf-container;
+    @include flex-content(center, space-between);
+
+    &__logo {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        display: none;
+
+        @include tablet {
+            display: initial;
+        }
+    }
+
+    &__links {
+        height: 100%;
+        gap: 1rem;
+        @include text-size(1.75rem, 2rem);
+        @include flex-content(center, center);
+        width: 100%;
+
+        @include tablet {
+            justify-content: flex-end;
+                @include text-size(1.5rem, 1.875rem);
+            }
+    }
+
+    &__link {
+        &:hover {
+            color: $secondary-accent-color;
+        }
+    }
+}
+
+.mobile {
+    @include tablet {
+        display: none;
+    }
+}

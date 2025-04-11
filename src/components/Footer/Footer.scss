@@ -1,0 +1,73 @@
+@use "./../../styles/partials/variables" as *;
+@use "./../../styles/partials/mixins" as *;
+
+.footer {
+    height: 7rem;
+    background-color: $primary-accent-color;
+    @include flex-full(column, center, space-between);
+    @include hf-container;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+
+    &__social {
+        height: 100%;
+        gap: 1rem;
+        @include flex-full(row, center, center);
+    }
+
+    &__title {
+        @include tablet {
+            height: 1.5rem;
+        }
+    }
+
+    &__icons {
+        gap: 1rem;
+        width: 100%;
+        padding-top: 1rem;
+        @include flex-full(row, center, space-evenly);
+
+        @include tablet {
+            justify-content: flex-start;
+            padding-top: 0;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        padding: 0;
+        display: none;
+
+        @include tablet {
+            display: initial;
+        }
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: .5rem;
+
+        @include tablet {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &__copy {
+        padding-bottom: 0.5rem;
+        height: 100%;
+        @include flex-full(column, center, flex-end);
+    }
+
+    &__text {
+        font-size: 0.5rem;
+
+        @include tablet {
+            font-size: 0.75rem;
+        }
+    }
+}

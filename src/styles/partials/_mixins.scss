@@ -1,0 +1,85 @@
+@use "./variables" as *;
+@use "./typography";
+
+//media queries
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+// font
+@mixin text-size($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin small-body {
+    @include tablet {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+// positioning
+@mixin flex-orientation($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+}
+
+@mixin flex-align($flex-direction, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+
+@mixin flex-justify($flex-direction, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+@mixin flex-content($align-items, $justify-content) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin flex-full($flex-direction, $align-items, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+// containers
+@mixin container {
+    max-width: 80rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include tablet {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include desktop {
+        margin: auto;
+    }
+}
+
+@mixin hf-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include tablet {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
