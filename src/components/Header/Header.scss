@@ -21,13 +21,13 @@
     &__links {
         height: 100%;
         gap: 1rem;
-        @include text-size(1.75rem, 2rem);
+        @include text-size(1.25rem, 1.575rem);
         @include flex-content(center, center);
         width: 100%;
 
         @include tablet {
             justify-content: flex-end;
-                @include text-size(1.5rem, 1.875rem);
+              
             }
     }
 

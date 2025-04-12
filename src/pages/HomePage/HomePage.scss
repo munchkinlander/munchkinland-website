@@ -9,17 +9,21 @@
     @include container;
 
     &__title {
-text-transform: uppercase;
+        text-transform: uppercase;
     }
 
     &__search {
-   gap: 2rem;
-    @include flex-full(row, center, center)
+        gap: 1rem;
+        @include flex-full(column, center, center);
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__search-bar {
         padding: 1rem;
-        
+
     }
 
     &__search-input {
@@ -27,12 +31,14 @@ text-transform: uppercase;
         width: 15rem;
     }
 
-&__dropdown {
-    width: 15rem;
-    padding: 0.25rem;
-}
+    &__dropdown {
+        width: 15rem;
+        padding: 0.25rem;
+    }
+
     &__gallery {
         padding: 2rem 0;
+        width: 100%;
         gap: 1rem;
         display: flex;
         flex-wrap: wrap;
@@ -40,33 +46,89 @@ text-transform: uppercase;
     }
 
     &__card {
-        width: 30%;
-        height: 30rem;
+        width: 45%;
+        height: 10rem;
         border: .125rem solid $secondary-accent-color;
         border-radius: 0.5rem;
         background-color: #FFFF;
         box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1), 0 .125rem .25rem rgba(0, 0, 0, 0.08);
         overflow: hidden;
+
+        @include tablet {
+            width: 30%;
+            height: 30rem;
+        }
     }
 
     &__info {
-        padding: 0.5rem 1rem;
-        height: 15%;
+        padding: 0.25rem 0.5rem;
+        height: 25%;
         border-top: .125rem solid $secondary-accent-color;
         background-color: $secondary-accent-color;
         @include flex-content(center, space-between);
+
+        @include tablet {
+            height: 15%;
+            padding: 0.5rem 1rem;
+        }
     }
-    
+
     &__image {
         width: 100%;
-        height: 85%;
+        height: 75%;
         object-fit: contain;
+
+        @include tablet {
+            height: 85%;
+        }
     }
 
     &__link {
-            color: $secondary-text-color;
-&:hover {
-    color: $primary-text-color;
+        color: $secondary-text-color;
+
+        &:hover {
+            color: $primary-text-color;
+        }
+    }
+
+    &__carousel {
+        margin: 0 auto;
+        padding: 1.5rem 0 3rem 0;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+
+        &:hover .home__carousel-group {
+            animation-play-state: paused;
+        }
+    }
+
+    &__carousel-group {
+        display: flex;
+        gap: 1.5rem;
+        padding-right: 1.5rem;
+        will-change: transform;
+        animation: scrolling 30s linear infinite;
+    }
+
+    &__carousel-card {
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 10%) .3125rem .3125rem 1.25rem 0;
+        overflow: hidden;
+        height: 20rem;
+    }
+
+    &__carousel-image {
+        height: 20rem;
+    }
 }
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }

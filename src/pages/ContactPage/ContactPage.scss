@@ -3,7 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .contact {
-    min-height: calc(100vh - 15rem);
+    min-height: calc(100vh - 10rem);
 
     &__container {
         padding-top: 2rem;
