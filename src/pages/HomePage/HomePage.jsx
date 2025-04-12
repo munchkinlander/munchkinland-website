@@ -1,11 +1,15 @@
 import "./HomePage.scss";
 import { useState, useEffect } from "react";
 import imageData from "./../../data/images.json";
+import Scroll from "../../components/Scroll/Scroll";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [filteredImages, setFilteredImages] = useState(imageData);
+  
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
 
 const carouselImages = [
   { src: "images/frogmaze-c.jpg", alt: "Image 1" },
@@ -17,7 +21,6 @@ const carouselImages = [
   { src: "images/lop-c.jpg", alt: "Image 7" },
   { src: "images/gato-c.jpg", alt: "Image 8" },
 ];
-
 
   useEffect(() => {
     const filtered = imageData.filter((image) => {
@@ -39,6 +42,16 @@ const carouselImages = [
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
+
+    const openModal = (image) => {
+      setModalImage(image);
+      setModalOpen(true);
+    };
+
+    const closeModal = () => {
+      setModalOpen(false);
+      setModalImage(null);
+    };
 
   return (
     <main className="home">
@@ -68,7 +81,7 @@ const carouselImages = [
           ))}
         </div>
       </div>
-      
+
       <h2 className="home__subtitle">Products</h2>
       <div className="home__search">
         <div className="home__search-bar">
@@ -99,7 +112,12 @@ const carouselImages = [
         {filteredImages.length > 0 ? (
           filteredImages.map((image, index) => (
             <div key={index} className="home__card">
-              <img src={image.src} alt={image.alt} className="home__image" />
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="home__image"
+                onClick={() => openModal(image)}
+              />
               <div className="home__info">
                 <span className="home__name">{image.name}</span>
                 <a className="home__link" href={image.link} target="_blank">
@@ -112,6 +130,21 @@ const carouselImages = [
           <p className="home__text">No results found.</p>
         )}
       </div>
+      {modalOpen && (
+        <div className="home__modal" onClick={closeModal}>
+          <div className="home__modal-content">
+            <button className="home__modal-close" onClick={closeModal}>
+              &times;
+            </button>
+            <img
+              className="home__modal-image"
+              src={modalImage.src}
+              alt={modalImage.alt}
+            />
+          </div>
+        </div>
+      )}
+      <Scroll />
     </main>
   );
 }

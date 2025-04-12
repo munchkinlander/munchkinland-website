@@ -3,8 +3,13 @@
 @use "../../styles/partials/mixins" as *;
 
 .about {
-        min-height: calc(100vh - 13rem);
-        padding-top: 2rem;
-        @include flex-align(column, center);
+    min-height: calc(100vh - 13rem);
+    padding-top: 2rem;
+    @include flex-align(column, center);
     @include container;
+
+    &__text {
+        width: 80%;
+        padding-bottom: 2rem;
+    }
 }

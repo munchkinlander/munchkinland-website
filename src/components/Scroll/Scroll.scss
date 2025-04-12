@@ -1,0 +1,41 @@
+@use "./../../styles/partials/variables" as *;
+@use "./../../styles/partials/mixins" as *;
+
+.scroll {
+    height: 3rem;
+
+    &__button {
+        position: fixed;
+        bottom: 8rem;
+        @include container;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $secondary-accent-color;
+        color: $secondary-text-color;
+        border: none;
+        border-radius: 0.5rem;
+        padding: .625rem;
+
+        width: 89%;
+        height: 2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: opacity 0.3s ease-in-out;
+
+        @include tablet {
+            height: 3rem;
+            font-size: 1.5rem;
+
+        }
+
+        @include desktop {
+            width: 60%;
+        }
+
+        &:hover {
+            background-color: $tertiary-accent-color;
+            color: $primary-text-color;
+        }
+
+    }
+}

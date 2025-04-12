@@ -26,10 +26,11 @@ h2,
 h3 {
     font-family: "Martel Sans";
     font-weight: 500;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     @include text-size(1.125rem, 1.4375rem);
 
     @include tablet {
+        padding-bottom: 2rem;
         @include text-size(2rem, 2.275rem);
     }
 }
