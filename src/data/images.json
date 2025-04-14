@@ -1,254 +1,275 @@
 [
   {
     "src": "images/agu.jpg",
-    "alt": "Image 1 description",
+    "alt": "Agumon sticker",
     "name": "Agumon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1682992123/digimon-agumon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/biyo.jpg",
-    "alt": "Image 2 description",
+    "alt": "Biyomon sticker",
     "name": "Biyomon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1543928052/digimon-biyomon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/bota.jpg",
-    "alt": "Image 3 description",
+    "alt": "Botamon sticker",
     "name": "Botamon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1256981419/digimon-baby-vinyl-stickers-punimon",
     "category": "Digimon"
   },
   {
-    "src": "images/chibi.jpg",
-    "alt": "Image 4 description",
-    "name": "Chibimon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "src": "images/chibo.jpg",
+    "alt": "Chibomon sticker",
+    "name": "Chibomon",
+    "link": "https://www.etsy.com/ca/listing/1267803021/digimon-v-line-vinyl-stickers-chibomon",
     "category": "Digimon"
   },
   {
     "src": "images/croagunk.jpg",
-    "alt": "Image 5 description",
+    "alt": "Dr. Croagunk sticker",
     "name": "Dr. Croagunk",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1558109671/pokemon-dr-croagunk-vinyl-sticker",
     "category": "Pokemon"
   },
   {
     "src": "images/demi.jpg",
-    "alt": "Image 6 description",
+    "alt": "Demimon sticker",
     "name": "Demimon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1267803021/digimon-v-line-vinyl-stickers-chibomon",
     "category": "Digimon"
   },
   {
     "src": "images/eggplant.jpg",
-    "alt": "Image 7 description",
+    "alt": "Angry eggplant sticker",
     "name": "Angry Eggplant",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1481024388/angry-vegetable-vinyl-stickers",
     "category": "Vegetable"
   },
   {
     "src": "images/firefly-black.jpg",
-    "alt": "Image 8 description",
+    "alt": "TLOU Firefly symbol sticker",
     "name": "Firefly symbol (black)",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1543814884/tlou-firefly-vinyl-stickers",
     "category": "The Last of Us"
   },
   {
     "src": "images/firefly-white.jpg",
-    "alt": "Image 9 description",
+    "alt": "TLOU white Firefly symbol sticker",
     "name": "Firefly symbol (white)",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1543814884/tlou-firefly-vinyl-stickers",
     "category": "The Last of Us"
   },
   {
     "src": "images/frogmaze.jpg",
-    "alt": "Image 10 description",
-    "name": "Frog Cat",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "alt": "Cat frog sticker",
+    "name": "Mazemaze",
+    "link": "https://www.etsy.com/ca/listing/1256548938/cat-frog-vinyl-sticker",
     "category": "Animal"
   },
   {
     "src": "images/gabu.jpg",
-    "alt": "Image 11 description",
+    "alt": "Gabumon sticker",
     "name": "Gabumon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1234884101/digimon-gabumon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/gabu-holo.jpg",
-    "alt": "Image 12 description",
+    "alt": "Gabumon holo sticker",
     "name": "Gabumon (holo)",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1234884101/digimon-gabumon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/gato.jpg",
-    "alt": "Image 13 description",
+    "alt": "Gatomon sticker",
     "name": "Gatomon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1692030776/digimon-gatomon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/goma.jpg",
-    "alt": "Image 14 description",
+    "alt": "Gomamon sticker",
     "name": "Gomamon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1543929176/digimon-gomamon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/gummy.jpg",
-    "alt": "Image 15 description",
+    "alt": "Gummymon sticker",
     "name": "Gummymon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1292425669/digimon-baby-twins-vinyl-stickers",
     "category": "Digimon"
   },
   {
     "src": "images/kera.jpg",
-    "alt": "Image 16 description",
+    "alt": "Keramon sticker",
     "name": "Keramon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1253795170/digimon-y2k-line-vinyl-stickers-kuramon",
     "category": "Digimon"
   },
   {
     "src": "images/koko.jpg",
-    "alt": "Image 17 description",
+    "alt": "Kokomon sticker",
     "name": "Kokomon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1292425669/digimon-baby-twins-vinyl-stickers",
     "category": "Digimon"
   },
   {
-    "src": "images/kume.jpg",
-    "alt": "Image 18 description",
-    "name": "Kumemon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "src": "images/kune.jpg",
+    "alt": "Kunemon sticker",
+    "name": "Kunemon",
+    "link": "https://www.etsy.com/ca/listing/1300927135/digimon-kunemon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/kura.jpg",
-    "alt": "Image 19 description",
+    "alt": "Kuramon sticker",
     "name": "Kuramon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1253795170/digimon-y2k-line-vinyl-stickers-kuramon",
     "category": "Digimon"
   },
   {
     "src": "images/lop.jpg",
-    "alt": "Image 20 description",
+    "alt": "Lopmon sticker",
     "name": "Lopmon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1271712708/digimon-bunny-twins-vinyl-stickers",
     "category": "Digimon"
   },
   {
     "src": "images/pata.jpg",
-    "alt": "Image 22 description",
+    "alt": "Patamon sticker",
     "name": "Patamon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1673392558/digimon-patamon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/pika-ic.jpg",
-    "alt": "Image 23 description",
+    "alt": "Yellow Pokemon double scoop ice cream",
     "name": "Chu Ice Cream",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1253187539/pokemon-ice-cream-vinyl-sticker-chu",
     "category": "Pokemon"
   },
   {
     "src": "images/postcard.jpg",
-    "alt": "Image 24 description",
+    "alt": "Keramon ramen shop postcard",
     "name": "KeRAMEN Postcard",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1517943613/digimon-print-y2k-ramen-shop",
     "category": "Digimon"
   },
   {
     "src": "images/poyo.jpg",
-    "alt": "Image 25 description",
+    "alt": "Poyomon sticker",
     "name": "Poyomon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1256981419/digimon-baby-vinyl-stickers-punimon",
     "category": "Digimon"
   },
   {
     "src": "images/puni.jpg",
-    "alt": "Image 26 description",
+    "alt": "Punimon sticker",
     "name": "Punimon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1256981419/digimon-baby-vinyl-stickers-punimon",
     "category": "Digimon"
   },
   {
     "src": "images/raikou.jpg",
-    "alt": "Image 27 description",
-    "name": "Raikou",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "alt": "Baby raikou biting a pillow sticker",
+    "name": "Baby Raikou",
+    "link": "https://www.etsy.com/ca/listing/1234879869/pokemon-baby-raikou-vinyl-sticker",
     "category": "Pokemon"
   },
   {
     "src": "images/seagull.jpg",
-    "alt": "Image 28 description",
+    "alt": "Seagull sticker",
     "name": "Seagull Steve",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1480975346/seagull-steve-bombastic-side-eye-vinyl",
     "category": "Animal"
   },
   {
     "src": "images/taito.jpg",
-    "alt": "Image 29 description",
+    "alt": "Seal sticker",
     "name": "Taito",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1480916970/baby-seal-vinyl-stickers",
     "category": "Animal"
   },
   {
     "src": "images/terrier.jpg",
-    "alt": "Image 30 description",
+    "alt": "Terriermon sticker",
     "name": "Terriermon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1271712708/digimon-bunny-twins-vinyl-stickers",
     "category": "Digimon"
   },
   {
     "src": "images/tesla.jpg",
-    "alt": "Image 32 description",
+    "alt": "Teslajellymon sticker",
     "name": "Teslajellymon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1706219929/digimon-teslajellymon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/tlou-logo.jpg",
-    "alt": "Image 33 description",
+    "alt": "TLOU logo sticker",
     "name": "TLOU logo",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1558000977/tlou-logo-vinyl-stickers",
+    "category": "The Last of Us"
+  },
+  {
+    "src": "images/tlou-logo-white.jpg",
+    "alt": "TLOU white logo sticker",
+    "name": "TLOU logo (white)",
+    "link": "https://www.etsy.com/ca/listing/1558000977/tlou-logo-vinyl-stickers",
     "category": "The Last of Us"
   },
   {
     "src": "images/tomato.jpg",
-    "alt": "Image 34 description",
+    "alt": "Angry tomato sticker",
     "name": "Angry Tomato",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1481024388/angry-vegetable-vinyl-stickers",
     "category": "Vegetable"
   },
   {
     "src": "images/tsume.jpg",
-    "alt": "Image 35 description",
+    "alt": "Tsumemon sticker",
     "name": "Tsumemon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1253795170/digimon-y2k-line-vinyl-stickers-kuramon",
     "category": "Digimon"
   },
   {
     "src": "images/tsuno.jpg",
-    "alt": "Image 36 description",
+    "alt": "Tsunomon sticker",
     "name": "Tsunomon",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1255154999/digimon-tsunomon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/tsuno-holo.jpg",
-    "alt": "Image 37 description",
+    "alt": "Holo tsunomon sticker",
     "name": "Tsunomon (holo)",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1255154999/digimon-tsunomon-vinyl-sticker",
     "category": "Digimon"
   },
   {
     "src": "images/wiggly-ic.jpg",
-    "alt": "Image 38 description",
+    "alt": "Pink Pokemon double scoop ice cream",
     "name": "Iggly Ice Cream",
-    "link": "https://www.etsy.com/ca/shop/Munchkinlander",
+    "link": "https://www.etsy.com/ca/listing/1253187539/pokemon-ice-cream-vinyl-sticker-chu",
     "category": "Pokemon"
+  },
+  {
+    "src": "images/tlou-moth.jpg",
+    "alt": "Holo TLOU moth sticker",
+    "name": "TLOU Moth",
+    "link": "https://www.etsy.com/ca/listing/1257499740/tlou-moth-vinyl-stickers",
+    "category": "The Last of Us"
+  },
+  {
+    "src": "images/tlou-moth-white.jpg",
+    "alt": "White TLOU moth sticker",
+    "name": "TLOU Moth (white)",
+    "link": "https://www.etsy.com/ca/listing/1257499740/tlou-moth-vinyl-stickers",
+    "category": "The Last of Us"
   }
 ]

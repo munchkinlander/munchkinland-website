@@ -7,6 +7,10 @@
     @include hf-container;
     @include flex-content(center, space-between);
 
+    &__logo-wrapper {
+@include logo-overlay;
+    }
+
     &__logo {
         height: 4rem;
         width: 4rem;
@@ -27,8 +31,8 @@
 
         @include tablet {
             justify-content: flex-end;
-              
-            }
+
+        }
     }
 
     &__link {
@@ -39,6 +43,8 @@
 }
 
 .mobile {
+    display: initial;
+
     @include tablet {
         display: none;
     }
