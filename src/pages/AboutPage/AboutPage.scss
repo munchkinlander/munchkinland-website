@@ -10,6 +10,43 @@
 
     &__text {
         width: 80%;
-        padding-bottom: 2rem;
+    }
+
+    &__gallery {
+        display: flex;
+        margin: 2rem 0;
+        width: 80%;
+        box-shadow: 0 .15rem .5rem rgba(0, 0, 0, 0.5);
+
+        @include tablet {
+            height: 10rem;
+            width: 40rem;
+                margin: 3rem 0;
+        }
+    }
+
+    &__image {
+        width: 25%;
+
+        @include tablet {
+            height: 10rem;
+            width: 10rem;
+            transition: transform 0.25s ease-in-out;
+
+            &:hover {
+                transform: scale(1.25);
+                z-index: 2;
+            }
+        }
+    }
+
+    &__video {
+        height: 10rem;
+        width: 10rem;
+
+        @include tablet {
+            height: 20rem;
+            width: 20rem;
+        }
     }
 }

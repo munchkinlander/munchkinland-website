@@ -1,26 +1,46 @@
 import "./HomePage.scss";
 import { useState, useEffect } from "react";
-import imageData from "./../../data/images.json";
 import Scroll from "../../components/Scroll/Scroll";
+import axios from "axios";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [filteredImages, setFilteredImages] = useState(imageData);
-  
+  const [imageData, setImageData] = useState([]);
+  const [carouselData, setCarouselData] = useState([]);
+  const [filteredImages, setFilteredImages] = useState([]);
+
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
 
-const carouselImages = [
-  { src: "images/frogmaze-c.jpg", alt: "Image 1" },
-  { src: "images/pika-ic-c.jpg", alt: "Image 2" },
-  { src: "images/raikou-c.jpg", alt: "Image 3" },
-  { src: "images/agu-c.jpg", alt: "Image 4" },
-  { src: "images/kera-c.jpg", alt: "Image 5" },
-  { src: "images/terrier-c.jpg", alt: "Image 6" },
-  { src: "images/lop-c.jpg", alt: "Image 7" },
-  { src: "images/gato-c.jpg", alt: "Image 8" },
-];
+  const baseUrl = import.meta.env.VITE_API_URL;
+
+  const fetchImages = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}/images`);
+      setImageData(response.data);
+    } catch (error) {
+      console.error("There was a problem retrieving the images.", error);
+    }
+  };
+
+  const fetchCarousel = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}/carousel`);
+      setCarouselData(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.error(
+        "There was a problem retrieving the carousel images.",
+        error
+      );
+    }
+  };
+
+  useEffect(() => {
+    fetchImages();
+    fetchCarousel();
+  }, []);
 
   useEffect(() => {
     const filtered = imageData.filter((image) => {
@@ -43,15 +63,19 @@ const carouselImages = [
     setSelectedCategory(event.target.value);
   };
 
-    const openModal = (image) => {
-      setModalImage(image);
-      setModalOpen(true);
-    };
+  const openModal = (image) => {
+    setModalImage(image);
+    setModalOpen(true);
+  };
 
-    const closeModal = () => {
-      setModalOpen(false);
-      setModalImage(null);
-    };
+  const closeModal = () => {
+    setModalOpen(false);
+    setModalImage(null);
+  };
+
+  const preventRightClick = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <main className="home">
@@ -59,23 +83,27 @@ const carouselImages = [
 
       <div className="home__carousel">
         <div className="home__carousel-group">
-          {carouselImages.map((image, index) => (
+          {carouselData.map((image, index) => (
             <div className="home__carousel-card" key={index}>
               <img
                 className="home__carousel-image"
-                src={image.src}
+                src={`${baseUrl}${image.src}`}
                 alt={image.alt}
+                onContextMenu={preventRightClick}
+                draggable="false"
               />
             </div>
           ))}
         </div>
         <div aria-hidden="true" className="home__carousel-group">
-          {carouselImages.map((image, index) => (
+          {carouselData.map((image, index) => (
             <div className="home__carousel-card" key={index}>
               <img
                 className="home__carousel-image"
-                src={image.src}
+                src={`${baseUrl}${image.src}`}
                 alt={image.alt}
+                onContextMenu={preventRightClick}
+                draggable="false"
               />
             </div>
           ))}
@@ -105,27 +133,37 @@ const carouselImages = [
           <option value="The Last of Us">The Last of Us</option>
           <option value="Animal">Animal</option>
           <option value="Vegetable">Vegetable</option>
+          <option value="Wallpapers">Wallpapers</option>
+          <option value="Other">Other</option>
         </select>
       </div>
 
       <div className="home__gallery">
-        {filteredImages.length > 0 ? (
-          filteredImages.map((image, index) => (
-            <div key={index} className="home__card">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="home__image"
-                onClick={() => openModal(image)}
-              />
-              <div className="home__info">
-                <span className="home__name">{image.name}</span>
-                <a className="home__link" href={image.link} target="_blank">
-                  Buy
-                </a>
+        {filteredImages.length > 0 || imageData.length > 0 ? (
+          (filteredImages.length > 0 ? filteredImages : imageData).map(
+            (image, index) => (
+              <div key={index} className="home__card">
+                <img
+                  src={`${baseUrl}${image.src}`}
+                  alt={image.alt}
+                  className="home__image"
+                  onClick={() => openModal(image)}
+                  onContextMenu={preventRightClick}
+                  draggable="false"
+                />
+                <div className="home__watermark home__watermark--gallery">
+                  © Munchkinland Designs
+                </div>
+
+                <div className="home__info">
+                  <span className="home__name">{image.name}</span>
+                  <a className="home__link" href={image.link} target="_blank">
+                    Buy
+                  </a>
+                </div>
               </div>
-            </div>
-          ))
+            )
+          )
         ) : (
           <p className="home__text">No results found.</p>
         )}
@@ -138,9 +176,12 @@ const carouselImages = [
             </button>
             <img
               className="home__modal-image"
-              src={modalImage.src}
+              src={`${baseUrl}${modalImage.src}`}
               alt={modalImage.alt}
+              onContextMenu={preventRightClick}
+              draggable="false"
             />
+            <div className="home__watermark">© Munchkinland Designs</div>
           </div>
         </div>
       )}

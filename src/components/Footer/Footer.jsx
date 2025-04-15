@@ -2,7 +2,7 @@ import "./Footer.scss";
 import { Link } from "react-router-dom";
 import instagram from "../../assets/icons/Instagram_icon.png";
 import etsy from "../../assets/icons/Etsy_icon.png";
-import mascot from "./../../assets/logo/mascot.jpg";
+import mascot from "./../../assets/logo/mascot.png";
 
 export default function Footer() {
   return (

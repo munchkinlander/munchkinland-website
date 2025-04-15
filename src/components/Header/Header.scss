@@ -8,7 +8,7 @@
     @include flex-content(center, space-between);
 
     &__logo-wrapper {
-@include logo-overlay;
+        @include logo-overlay;
     }
 
     &__logo {
