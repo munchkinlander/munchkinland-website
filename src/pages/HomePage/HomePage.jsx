@@ -79,7 +79,7 @@ export default function HomePage() {
 
   return (
     <main className="home">
-      <h1 className="home__title">Munchkinland Designs</h1>
+      <h1 className="home__title">Munchkinlander Designs</h1>
 
       <div className="home__carousel">
         <div className="home__carousel-group">
@@ -152,7 +152,7 @@ export default function HomePage() {
                   draggable="false"
                 />
                 <div className="home__watermark home__watermark--gallery">
-                  © Munchkinland Designs
+                  © Munchkinlander Designs
                 </div>
 
                 <div className="home__info">
@@ -181,7 +181,7 @@ export default function HomePage() {
               onContextMenu={preventRightClick}
               draggable="false"
             />
-            <div className="home__watermark">© Munchkinland Designs</div>
+            <div className="home__watermark">© Munchkinlander Designs</div>
           </div>
         </div>
       )}

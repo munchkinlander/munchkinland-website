@@ -9,13 +9,12 @@ import art2 from "./../../assets/images/rubberhose.jpg";
 import art3 from "./../../assets/images/custom-card.jpg";
 import art4 from "./../../assets/images/digimon-evos.png";
 
-
 export default function AboutPage() {
   return (
     <main className="about">
       <h1 className="about__title">About Me</h1>
       <p className="about__text">
-        Hi there! I’m Katie Lagace, the creative mind behind Munchkinland
+        Hi there! I’m Katie Lagace, the creative mind behind Munchkinlander
         Designs. I’m a Canadian designer with a background in visualizations and
         2D/3D renderings. By day, I work as a data specialist, but by night (and
         weekends, and coffee breaks...), I love creating cute designs for my
@@ -32,10 +31,30 @@ export default function AboutPage() {
       <p className="about__text">
         I also take on custom commissions — some of my past favorites include OC
         portraits, custom Pokémon cards, and{" "}
-        <a className="about__link" href="https://icy-nova.com/" target="_blank">cozy sweater designs</a> inspired by
-        Yu-Gi-Oh!, Digimon, and more. Munchkinland is all about celebrating
-        creativity, nostalgia, and fun, and I’m so excited to share my designs
-        with you.
+        <a
+          className="about__link"
+          href="https://icy-nova.com/products/magician-lady-hoodie"
+          target="_blank"
+        >
+          cozy
+        </a>{" "}
+        <a
+          className="about__link"
+          href="https://icy-nova.com/products/angel-cat-sweater"
+          target="_blank"
+        >
+          sweater
+        </a>{" "}
+        <a
+          className="about__link"
+          href="https://icy-nova.com/products/angel-potato-hoodie"
+          target="_blank"
+        >
+          designs
+        </a>{" "}
+        inspired by Yu-Gi-Oh!, Digimon, and more. Munchkinlander is all about
+        celebrating creativity, nostalgia, and fun, and I’m so excited to share
+        my designs with you.
       </p>
       <div className="about__gallery">
         <img src={art1} className="about__image" />

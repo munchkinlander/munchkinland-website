@@ -12,6 +12,14 @@
         width: 80%;
     }
 
+    &__link {
+color: $secondary-accent-color;
+
+&:hover {
+    color: $primary-accent-color;
+}
+    }
+
     &__gallery {
         display: flex;
         margin: 2rem 0;
