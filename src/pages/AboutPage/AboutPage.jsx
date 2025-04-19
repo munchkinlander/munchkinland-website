@@ -1,8 +1,7 @@
 import "./AboutPage.scss";
 import { useEffect, useState } from "react";
 
-import videoMP4 from "./../../assets/videos/frog-cat.mp4";
-import videoWebP from "./../../assets/videos/frog-cat.webm";
+import videoMP4 from "./../../assets/videos/frog-cat-comp.mp4";
 
 import cat1WebP from "./../../assets/images/the-council.webp";
 import cat1JPG from "./../../assets/images/the-council.jpg";
@@ -139,7 +138,6 @@ function supportsWebP() {
         the work speaks for itself.
       </p>
       <video autoPlay loop muted playsInline className="about__video">
-        <source src={videoWebP} type="video/webm" />
         <source src={videoMP4} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
