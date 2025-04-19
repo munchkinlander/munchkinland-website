@@ -9,6 +9,7 @@ export default function HomePage() {
   const [imageData, setImageData] = useState([]);
   const [carouselData, setCarouselData] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
@@ -77,112 +78,130 @@ export default function HomePage() {
     e.preventDefault();
   };
 
+ useEffect(() => {
+   if (imageData.length > 0 && carouselData.length > 0) {
+     setImagesLoaded(true);
+   }
+ }, [imageData, carouselData]);
+
   return (
     <main className="home">
       <h1 className="home__title">Munchkinlander Designs</h1>
 
-      <div className="home__carousel">
-        <div className="home__carousel-group">
-          {carouselData.map((image, index) => (
-            <div className="home__carousel-card" key={index}>
-              <img
-                className="home__carousel-image"
-                src={`${baseUrl}${image.src}`}
-                alt={image.alt}
-                onContextMenu={preventRightClick}
-                draggable="false"
+      {!imagesLoaded ? (
+        <div className="home__spinner">
+          <div className="home__spinner-circle"></div>
+        </div>
+      ) : (
+        <>
+          <div className="home__carousel">
+            <div className="home__carousel-group">
+              {carouselData.map((image, index) => (
+                <div className="home__carousel-card" key={index}>
+                  <img
+                    className="home__carousel-image"
+                    src={`${baseUrl}${image.src}`}
+                    alt={image.alt}
+                    onContextMenu={preventRightClick}
+                    draggable="false"
+                  />
+                </div>
+              ))}
+            </div>
+            <div aria-hidden="true" className="home__carousel-group">
+              {carouselData.map((image, index) => (
+                <div className="home__carousel-card" key={index}>
+                  <img
+                    className="home__carousel-image"
+                    src={`${baseUrl}${image.src}`}
+                    alt={image.alt}
+                    onContextMenu={preventRightClick}
+                    draggable="false"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <h2 className="home__subtitle">Products</h2>
+          <div className="home__search">
+            <div className="home__search-bar">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={query}
+                onChange={handleInputChange}
+                className="home__search-input"
               />
             </div>
-          ))}
-        </div>
-        <div aria-hidden="true" className="home__carousel-group">
-          {carouselData.map((image, index) => (
-            <div className="home__carousel-card" key={index}>
-              <img
-                className="home__carousel-image"
-                src={`${baseUrl}${image.src}`}
-                alt={image.alt}
-                onContextMenu={preventRightClick}
-                draggable="false"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
 
-      <h2 className="home__subtitle">Products</h2>
-      <div className="home__search">
-        <div className="home__search-bar">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={query}
-            onChange={handleInputChange}
-            className="home__search-input"
-          />
-        </div>
+            <select
+              value={selectedCategory}
+              onChange={handleCategoryChange}
+              className="home__dropdown"
+            >
+              <option value="All">All Categories</option>
+              <option value="Digimon">Digimon</option>
+              <option value="Pokemon">Pokemon</option>
+              <option value="The Last of Us">The Last of Us</option>
+              <option value="Animal">Animal</option>
+              <option value="Vegetable">Vegetable</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
 
-        <select
-          value={selectedCategory}
-          onChange={handleCategoryChange}
-          className="home__dropdown"
-        >
-          <option value="All">All Categories</option>
-          <option value="Digimon">Digimon</option>
-          <option value="Pokemon">Pokemon</option>
-          <option value="The Last of Us">The Last of Us</option>
-          <option value="Animal">Animal</option>
-          <option value="Vegetable">Vegetable</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
+          <div className="home__gallery">
+            {filteredImages.length > 0 || imageData.length > 0 ? (
+              (filteredImages.length > 0 ? filteredImages : imageData).map(
+                (image, index) => (
+                  <div key={index} className="home__card">
+                    <img
+                      src={`${baseUrl}${image.src}`}
+                      alt={image.alt}
+                      className="home__image"
+                      onClick={() => openModal(image)}
+                      onContextMenu={preventRightClick}
+                      draggable="false"
+                    />
+                    <div className="home__watermark home__watermark--gallery">
+                      © Munchkinlander Designs
+                    </div>
 
-      <div className="home__gallery">
-        {filteredImages.length > 0 || imageData.length > 0 ? (
-          (filteredImages.length > 0 ? filteredImages : imageData).map(
-            (image, index) => (
-              <div key={index} className="home__card">
+                    <div className="home__info">
+                      <span className="home__name">{image.name}</span>
+                      <a
+                        className="home__link"
+                        href={image.link}
+                        target="_blank"
+                      >
+                        Buy
+                      </a>
+                    </div>
+                  </div>
+                )
+              )
+            ) : (
+              <p className="home__text">No results found.</p>
+            )}
+          </div>
+          {modalOpen && (
+            <div className="home__modal" onClick={closeModal}>
+              <div className="home__modal-content">
+                <button className="home__modal-close" onClick={closeModal}>
+                  &times;
+                </button>
                 <img
-                  src={`${baseUrl}${image.src}`}
-                  alt={image.alt}
-                  className="home__image"
-                  onClick={() => openModal(image)}
+                  className="home__modal-image"
+                  src={`${baseUrl}${modalImage.src}`}
+                  alt={modalImage.alt}
                   onContextMenu={preventRightClick}
                   draggable="false"
                 />
-                <div className="home__watermark home__watermark--gallery">
-                  © Munchkinlander Designs
-                </div>
-
-                <div className="home__info">
-                  <span className="home__name">{image.name}</span>
-                  <a className="home__link" href={image.link} target="_blank">
-                    Buy
-                  </a>
-                </div>
+                <div className="home__watermark">© Munchkinlander Designs</div>
               </div>
-            )
-          )
-        ) : (
-          <p className="home__text">No results found.</p>
-        )}
-      </div>
-      {modalOpen && (
-        <div className="home__modal" onClick={closeModal}>
-          <div className="home__modal-content">
-            <button className="home__modal-close" onClick={closeModal}>
-              &times;
-            </button>
-            <img
-              className="home__modal-image"
-              src={`${baseUrl}${modalImage.src}`}
-              alt={modalImage.alt}
-              onContextMenu={preventRightClick}
-              draggable="false"
-            />
-            <div className="home__watermark">© Munchkinlander Designs</div>
-          </div>
-        </div>
+            </div>
+          )}
+        </>
       )}
       <Scroll />
     </main>

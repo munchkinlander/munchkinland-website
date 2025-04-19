@@ -6,8 +6,10 @@ export default function Scroll() {
 
   const handleScroll = () => {
     if (
-      window.innerHeight + document.documentElement.scrollTop ===
-      document.documentElement.offsetHeight
+      // window.innerHeight + document.documentElement.scrollTop ===
+      // document.documentElement.offsetHeight
+      window.innerHeight + Math.round(document.documentElement.scrollTop) >=
+      document.documentElement.offsetHeight - 1
     ) {
       setShowScrollToTop(true);
     } else {

@@ -223,6 +223,24 @@
         color: #000;
         cursor: pointer;
     }
+
+    //
+    &__spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+    &__spinner::after {
+        content: "";
+        border: .3125rem solid $primary-accent-color;
+        border-top: .3125rem solid $primary-text-color;
+        border-radius: 50%;
+        width: 3.125rem;
+        height: 3.125rem;
+        animation: spin 1s linear infinite;
+    }
 }
 
 @keyframes scrolling {
@@ -232,5 +250,15 @@
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
