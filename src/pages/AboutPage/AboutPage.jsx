@@ -1,56 +1,30 @@
 import "./AboutPage.scss";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 import videoMP4 from "./../../assets/videos/frog-cat-comp.mp4";
 
-import cat1WebP from "./../../assets/images/the-council.webp";
-import cat1JPG from "./../../assets/images/the-council.jpg";
-import cat2WebP from "./../../assets/images/the-nose.webp";
-import cat2JPG from "./../../assets/images/the-nose.jpg";
-import cat3WebP from "./../../assets/images/the-destroyer.webp";
-import cat3JPG from "./../../assets/images/the-destroyer.jpg";
-import cat4WebP from "./../../assets/images/the-watchers.webp";
-import cat4JPG from "./../../assets/images/the-watchers.jpg";
-import art1WebP from "./../../assets/images/digi-babies.webp";
-import art1PNG from "./../../assets/images/digi-babies.png";
-import art2WebP from "./../../assets/images/rubberhose.webp";
-import art2JPG from "./../../assets/images/rubberhose.jpg";
-import art3WebP from "./../../assets/images/custom-card.webp";
-import art3JPG from "./../../assets/images/custom-card.jpg";
-import art4WebP from "./../../assets/images/digimon-evos.webp";
-import art4PNG from "./../../assets/images/digimon-evos.png";
-
 export default function AboutPage() {
-  const [useWebP, setUseWebP] = useState(true);
+    const [aboutData, setAboutData] = useState(null);
 
-function supportsWebP() {
-  return document
-    .createElement("canvas")
-    .toDataURL("image/webp")
-    .startsWith("data:image/webp");
-}
+   const baseUrl = import.meta.env.VITE_API_URL;
 
-  useEffect(() => {
-    setUseWebP(supportsWebP());
-  }, []);
+  const fetchPictures = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}/pictures`);
+      setAboutData(response.data);
+    } catch (error) {
+      console.error("There was a problem retrieving the pictures.", error);
+    }
+  }
 
-  const cats = [
-    { webp: cat1WebP, fallback: cat1JPG, alt: "Cats on stairs" },
-    { webp: cat2WebP, fallback: cat2JPG, alt: "Cat face closeup" },
-    { webp: cat3WebP, fallback: cat3JPG, alt: "Cat chewing on string" },
-    { webp: cat4WebP, fallback: cat4JPG, alt: "Cats at window" },
-  ];
+    useEffect(() => {
+      fetchPictures();
+    }, []);
 
-  const art = [
-    { webp: art1WebP, fallback: art1PNG, alt: "Stickers on cards" },
-    { webp: art2WebP, fallback: art2JPG, alt: "Rubberhose style drawing" },
-    {
-      webp: art3WebP,
-      fallback: art3JPG,
-      alt: "Custom card design on tablet",
-    },
-    { webp: art4WebP, fallback: art4PNG, alt: "Sticker line on cards" },
-  ];
+      if (!aboutData) {
+        return <div>Loading...</div>;
+      }
 
   return (
     <main className="about">
@@ -65,16 +39,18 @@ function supportsWebP() {
         hanging out with my wife and our many cats.
       </p>
       <div className="about__gallery">
-        {/* <img src={cat1JPG} className="about__image" alt="Cats on stairs" />
-        <img src={cat2JPG} className="about__image" alt="Cat face closeup" />
-        <img src={cat3JPG} className="about__image" alt="Cat chewing on string" />
-        <img src={cat4JPG} className="about__image" alt="Cats at window" /> */}
-        {cats.map((img, i) => (
+        {aboutData.cats.map((image, i) => (
           <img
             key={i}
-            src={useWebP ? img.webp : img.fallback}
+            src={`${baseUrl}/images/${image.src}`}
             className="about__image"
-            alt={img.alt}
+            alt={image.alt}
+            onError={(e) => {
+              if (image.fallback) {
+                e.target.onerror = null;
+                e.target.src = `${baseUrl}/images/${image.fallback}`;
+              }
+            }}
           />
         ))}
       </div>
@@ -107,28 +83,18 @@ function supportsWebP() {
         my designs with you.
       </p>
       <div className="about__gallery">
-        {/* <img src={art1WebP} className="about__image" alt="Stickers on cards" />
-        <img
-          src={art2WebP}
-          className="about__image"
-          alt="Rubberhose style drawing"
-        />
-        <img
-          src={art3WebP}
-          className="about__image"
-          alt="Custom card design on tablet"
-        />
-        <img
-          src={art4WebP}
-          className="about__image"
-          alt="Sticker line on cards"
-        /> */}
-        {art.map((img, i) => (
+        {aboutData.art.map((image, i) => (
           <img
             key={i}
-            src={useWebP ? img.webp : img.fallback}
+            src={`${baseUrl}/images/${image.src}`}
             className="about__image"
-            alt={img.alt}
+            alt={image.alt}
+            onError={(e) => {
+              if (image.fallback) {
+                e.target.onerror = null;
+                e.target.src = `${baseUrl}/images/${image.fallback}`;
+              }
+            }}
           />
         ))}
       </div>
