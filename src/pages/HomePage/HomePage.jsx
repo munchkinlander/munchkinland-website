@@ -173,7 +173,6 @@ export default function HomePage() {
                       className="home__image"
                       onClick={() => openModal(image)}
                       onContextMenu={preventRightClick}
-                      loading="lazy"
                       draggable="false"
                       onError={(e) => {
                         if (image.fallback) {
@@ -215,7 +214,6 @@ export default function HomePage() {
                   alt={modalImage.alt}
                   onContextMenu={preventRightClick}
                   draggable="false"
-                  loading="lazy"
                   onError={(e) => {
                     if (modalImage.fallback) {
                       e.target.onerror = null;
