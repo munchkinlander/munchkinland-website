@@ -2,7 +2,7 @@ import "./AboutPage.scss";
 import { useEffect, useState } from "react";
 
 import videoMP4 from "./../../assets/videos/frog-cat.mp4";
-import videoWebP from "./../../assets/videos/frog-cat-web.webm";
+import videoWebP from "./../../assets/videos/frog-cat.webm";
 
 import cat1WebP from "./../../assets/images/the-council.webp";
 import cat1JPG from "./../../assets/images/the-council.jpg";
