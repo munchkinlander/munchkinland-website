@@ -234,8 +234,8 @@
 
     &__spinner::after {
         content: "";
-        border: .3125rem solid $primary-accent-color;
-        border-top: .3125rem solid $primary-text-color;
+        border: .3125rem solid $primary-text-color;
+        border-top: .3125rem solid $primary-accent-color;
         border-radius: 50%;
         width: 3.125rem;
         height: 3.125rem;
