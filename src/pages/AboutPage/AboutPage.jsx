@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import videoMP4 from "./../../assets/videos/frog-cat.mp4";
 import videoWebP from "./../../assets/videos/frog-cat-web.webm";
+
 import cat1WebP from "./../../assets/images/the-council.webp";
 import cat1JPG from "./../../assets/images/the-council.jpg";
 import cat2WebP from "./../../assets/images/the-nose.webp";
