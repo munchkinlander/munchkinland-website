@@ -133,7 +133,6 @@ export default function HomePage() {
           <option value="The Last of Us">The Last of Us</option>
           <option value="Animal">Animal</option>
           <option value="Vegetable">Vegetable</option>
-          <option value="Wallpapers">Wallpapers</option>
           <option value="Other">Other</option>
         </select>
       </div>
