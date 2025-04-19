@@ -78,11 +78,11 @@ export default function HomePage() {
     e.preventDefault();
   };
 
- useEffect(() => {
-   if (imageData.length > 0 && carouselData.length > 0) {
-     setImagesLoaded(true);
-   }
- }, [imageData, carouselData]);
+  useEffect(() => {
+    if (imageData.length > 0 && carouselData.length > 0) {
+      setImagesLoaded(true);
+    }
+  }, [imageData, carouselData]);
 
   return (
     <main className="home">
@@ -104,6 +104,12 @@ export default function HomePage() {
                     alt={image.alt}
                     onContextMenu={preventRightClick}
                     draggable="false"
+                    onError={(e) => {
+                      if (image.fallback) {
+                        e.target.onerror = null;
+                        e.target.src = `${baseUrl}${image.fallback}`;
+                      }
+                    }}
                   />
                 </div>
               ))}
@@ -117,6 +123,12 @@ export default function HomePage() {
                     alt={image.alt}
                     onContextMenu={preventRightClick}
                     draggable="false"
+                    onError={(e) => {
+                      if (image.fallback) {
+                        e.target.onerror = null;
+                        e.target.src = `${baseUrl}${image.fallback}`;
+                      }
+                    }}
                   />
                 </div>
               ))}
@@ -161,7 +173,14 @@ export default function HomePage() {
                       className="home__image"
                       onClick={() => openModal(image)}
                       onContextMenu={preventRightClick}
+                      loading="lazy"
                       draggable="false"
+                      onError={(e) => {
+                        if (image.fallback) {
+                          e.target.onerror = null;
+                          e.target.src = `${baseUrl}${image.fallback}`;
+                        }
+                      }}
                     />
                     <div className="home__watermark home__watermark--gallery">
                       © Munchkinlander Designs
@@ -196,6 +215,13 @@ export default function HomePage() {
                   alt={modalImage.alt}
                   onContextMenu={preventRightClick}
                   draggable="false"
+                  loading="lazy"
+                  onError={(e) => {
+                    if (modalImage.fallback) {
+                      e.target.onerror = null;
+                      e.target.src = `${baseUrl}${modalImage.fallback}`;
+                    }
+                  }}
                 />
                 <div className="home__watermark">© Munchkinlander Designs</div>
               </div>
