@@ -13,11 +13,11 @@
     }
 
     &__link {
-color: $secondary-accent-color;
+        color: $secondary-accent-color;
 
-&:hover {
-    color: $primary-accent-color;
-}
+        &:hover {
+            color: $primary-accent-color;
+        }
     }
 
     &__gallery {
@@ -29,7 +29,7 @@ color: $secondary-accent-color;
         @include tablet {
             height: 10rem;
             width: 40rem;
-                margin: 3rem 0;
+            margin: 3rem 0;
         }
     }
 
