@@ -168,6 +168,7 @@ export default function HomePage() {
                 (image, index) => (
                   <div key={index} className="home__card">
                     <img
+                      loading="lazy"
                       src={`${baseUrl}${image.src}`}
                       alt={image.alt}
                       className="home__image"

@@ -1,30 +1,30 @@
 import "./AboutPage.scss";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import axios from "axios";
 
 import videoMP4 from "./../../assets/videos/frog-cat-comp.mp4";
 
-export default function AboutPage() {
-    const [aboutData, setAboutData] = useState(null);
+export default function AboutPage({ aboutData }) {
+  // const [aboutData, setAboutData] = useState(null);
 
-   const baseUrl = import.meta.env.VITE_API_URL;
+  const baseUrl = import.meta.env.VITE_API_URL;
 
-  const fetchPictures = async () => {
-    try {
-      const response = await axios.get(`${baseUrl}/pictures`);
-      setAboutData(response.data);
-    } catch (error) {
-      console.error("There was a problem retrieving the pictures.", error);
-    }
+  // const fetchPictures = async () => {
+  //   try {
+  //     const response = await axios.get(`${baseUrl}/pictures`);
+  //     setAboutData(response.data);
+  //   } catch (error) {
+  //     console.error("There was a problem retrieving the pictures.", error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchPictures();
+  // }, []);
+
+  if (!aboutData) {
+    return <div>Loading...</div>;
   }
-
-    useEffect(() => {
-      fetchPictures();
-    }, []);
-
-      if (!aboutData) {
-        return <div>Loading...</div>;
-      }
 
   return (
     <main className="about">
