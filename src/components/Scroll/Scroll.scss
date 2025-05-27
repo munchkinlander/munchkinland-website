@@ -15,7 +15,6 @@
         border: none;
         border-radius: 0.5rem;
         padding: .625rem;
-
         width: 89%;
         height: 2rem;
         cursor: pointer;
@@ -29,7 +28,7 @@
         }
 
         @include desktop {
-            width: 60%;
+            width: 71.5rem;
         }
 
         &:hover {
