@@ -27,13 +27,13 @@
 
     &__icons {
         gap: 1rem;
-        width: 100%;
         padding-top: 1rem;
         @include flex-full(row, center, space-evenly);
 
         @include tablet {
             justify-content: flex-start;
             padding-top: 0;
+            width: 100%;
         }
     }
 
