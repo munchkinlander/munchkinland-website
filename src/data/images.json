@@ -49,20 +49,6 @@
     "category": "Vegetable"
   },
   {
-    "src": "images/firefly-black.jpg",
-    "alt": "TLOU Firefly symbol sticker",
-    "name": "Firefly symbol (black)",
-    "link": "https://www.etsy.com/ca/listing/1543814884/tlou-firefly-vinyl-stickers",
-    "category": "The Last of Us"
-  },
-  {
-    "src": "images/firefly-white.jpg",
-    "alt": "TLOU white Firefly symbol sticker",
-    "name": "Firefly symbol (white)",
-    "link": "https://www.etsy.com/ca/listing/1543814884/tlou-firefly-vinyl-stickers",
-    "category": "The Last of Us"
-  },
-  {
     "src": "images/frogmaze.jpg",
     "alt": "Cat frog sticker",
     "name": "Mazemaze",
@@ -210,20 +196,6 @@
     "category": "Digimon"
   },
   {
-    "src": "images/tlou-logo.jpg",
-    "alt": "TLOU logo sticker",
-    "name": "TLOU logo",
-    "link": "https://www.etsy.com/ca/listing/1558000977/tlou-logo-vinyl-stickers",
-    "category": "The Last of Us"
-  },
-  {
-    "src": "images/tlou-logo-white.jpg",
-    "alt": "TLOU white logo sticker",
-    "name": "TLOU logo (white)",
-    "link": "https://www.etsy.com/ca/listing/1558000977/tlou-logo-vinyl-stickers",
-    "category": "The Last of Us"
-  },
-  {
     "src": "images/tomato.jpg",
     "alt": "Angry tomato sticker",
     "name": "Angry Tomato",
@@ -257,19 +229,5 @@
     "name": "Iggly Ice Cream",
     "link": "https://www.etsy.com/ca/listing/1253187539/pokemon-ice-cream-vinyl-sticker-chu",
     "category": "Pokemon"
-  },
-  {
-    "src": "images/tlou-moth.jpg",
-    "alt": "Holo TLOU moth sticker",
-    "name": "TLOU Moth",
-    "link": "https://www.etsy.com/ca/listing/1257499740/tlou-moth-vinyl-stickers",
-    "category": "The Last of Us"
-  },
-  {
-    "src": "images/tlou-moth-white.jpg",
-    "alt": "White TLOU moth sticker",
-    "name": "TLOU Moth (white)",
-    "link": "https://www.etsy.com/ca/listing/1257499740/tlou-moth-vinyl-stickers",
-    "category": "The Last of Us"
   }
 ]
