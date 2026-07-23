@@ -155,7 +155,7 @@ export default function HomePage() {
               <option value="All">All Categories</option>
               <option value="Digimon">Digimon</option>
               <option value="Pokemon">Pokemon</option>
-              <option value="The Last of Us">The Last of Us</option>
+              {/* <option value="The Last of Us">The Last of Us</option> */}
               <option value="Animal">Animal</option>
               <option value="Vegetable">Vegetable</option>
               <option value="Other">Other</option>
